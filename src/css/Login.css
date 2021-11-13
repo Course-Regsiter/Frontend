@@ -1,0 +1,58 @@
+.LoginContainer {
+    margin: 30px;
+}
+
+.LoginContainer .LoginBox {
+    border: 1px solid #e7e7e7;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.LoginContainer .LoginBox > span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.LoginContainer .Login_Input {
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+}
+
+.LoginContainer .Login_Input > input {
+    padding: 15px;
+    border : 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.LoginContainer .Login_Input > input:focus {
+    outline: 1px solid rgb(0, 127, 255);
+}
+
+
+.LoginContainer .LoginBtn {
+    background-color: rgb(0, 127, 255);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.LoginContainer .LoginBtn:hover {
+    background-color: rgba(0, 128, 255, 0.904);
+}
+
+.LoginContainer .Signup_Text {
+    text-align: center;
+    color: rgb(0, 127, 255);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}

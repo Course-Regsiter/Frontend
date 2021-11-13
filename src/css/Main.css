@@ -1,0 +1,110 @@
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.MainContainer > div {
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+.MainContainer .Sugang_Header {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.MainContainer .Sugang_Input {
+    display: flex;
+    gap : 10px;
+}
+
+.MainContainer .Sugang_Input > input {
+    padding : 10px;
+    border : 1px solid rgb(0 127 255 / 20%);
+    border-radius: 5px;
+}
+
+.MainContainer .Sugang_Input > input:hover,
+.MainContainer .Sugang_Input > input:focus {
+    outline : 1px solid rgb(0, 127, 255);
+}
+
+.MainContainer .Sugang_Input .bnt {
+    display: flex;
+    align-items: center;
+}
+
+.MainContainer .bnt {
+    font-size: 0.8rem;
+    padding : 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.MainContainer .Sugang_Input .Sugang_Bnt {
+    background-color: rgb(0, 127, 255);
+    color: white;
+}
+
+.MainContainer .Sugang_Input .Sugang_Bnt:hover {
+    background-color: rgba(0, 128, 255, 0.904);
+}
+
+.MainContainer .Sugang_Input .PrintClass_Bnt:hover,
+.MainContainer .bnt.registerBnt:hover {
+    border: 1px solid rgb(0, 127, 255);
+    background-color: rgba(0, 127, 255, 0.05);
+}
+
+.MainContainer .Sugang_Input .PrintClass_Bnt {
+    border: 1px solid rgb(0 127 255 / 20%);
+    color: rgb(0, 127, 255);
+}
+
+
+.MainContainer .Sugang_Body {
+    padding : 20px;
+    border: 1px solid rgb(0 127 255 / 20%);
+}
+
+.MainContainer .Sugang_Body .Sugang_List {
+    display: flex;
+    flex-direction: column;
+    gap : 5px;
+}
+
+.MainContainer .Sugang_Item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.MainContainer .Sugang_Item_Info {
+    display: flex;
+    gap : 50px;
+    font-size: 0.9rem;
+}
+
+.MainContainer .Sugang_Item_Info > span:first-child {
+    font-weight: bold;
+    color : rgb(0, 127, 255);
+}
+
+.MainContainer .bnt.deleteBnt {
+    border: 1px solid #ff63472e;
+    color : tomato;
+}
+
+.MainContainer .bnt.deleteBnt:hover {
+    border: 1px solid tomato;
+    background-color: rgba(255, 99, 71, 0.05);;
+}
+
+.MainContainer .bnt.registerBnt {
+    border: 1px solid rgb(0 127 255 / 20%);
+    color : rgb(0, 127, 255);
+}

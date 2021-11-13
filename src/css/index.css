@@ -1,0 +1,29 @@
+@font-face{
+    font-family : "nanumSquare";
+    src: url("../font/NanumFontSetup_TTF_SQUARE/NanumSquareR.ttf") ;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "nanumSquare";
+    src: url("../font/NanumFontSetup_TTF_SQUARE/NanumSquareB.ttf");
+    font-weight: bold;
+}
+@font-face{
+    font-family: "nanumSquare";
+    src: url("../font/NanumFontSetup_TTF_SQUARE/NanumSquareEB.ttf");
+    font-weight: 900;
+}
+
+a {
+    color : unset;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'nanumSquare', sans-serif !important;
+}
+
+#root {
+    max-width: 1032px;
+    margin: 0 auto;
+}

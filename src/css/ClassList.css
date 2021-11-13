@@ -1,0 +1,41 @@
+.ClassListContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.ClassListContainer .ClassListBox {
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.ClassListContainer .ClassListBox .ClassList_Header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.ClassListContainer .ClassListBox .ClassList_Header > svg {
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 127, 255, 20%);
+}
+
+.ClassListContainer .ClassListBox .ClassList_Header > svg:hover {
+    background-color: rgba(0, 127, 255, 0.05);
+}
