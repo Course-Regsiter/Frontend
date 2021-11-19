@@ -1,8 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
 import "./css/Navigation.css";
+import api from 'api/api';
 
 const Navigation = ({user}) => {
+    const history = useHistory();
+
+    const handelClickLogout = async() => {
+        try {
+            await api.logout();
+            user.isLogged = null;
+            history.push('/login');
+        }catch(err) {
+            console.log(err)
+            alert("잠시 후 다시 시도해 주세요.");
+        }
+    }
 
     return (
         <div className="NavigationContainer">
@@ -12,7 +26,7 @@ const Navigation = ({user}) => {
                 </div>
             </Link>
             { user.isLogged ? (
-                <div className="Navigation_Login">
+                <div onClick={handelClickLogout} className="Navigation_Login">
                     로그아웃
                 </div>
             ) : (

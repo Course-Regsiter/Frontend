@@ -17,4 +17,5 @@
     font-weight: bold;
     padding: 5px 15px;
     color : rgb(0, 127, 255);
+    cursor: pointer;
 }

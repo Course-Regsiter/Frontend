@@ -10,7 +10,7 @@ import RouteIf from "Routes/RouteIf";
 function App() {
   const [user, setUser] = useState({
     user : null,
-    isLogged : true
+    isLogged : null
   });
   
   return (
