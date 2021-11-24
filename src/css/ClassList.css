@@ -16,7 +16,7 @@
     background: white;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     border-radius: 10px;
     overflow: scroll;
 }
@@ -38,4 +38,9 @@
 
 .ClassListContainer .ClassListBox .ClassList_Header > svg:hover {
     background-color: rgba(0, 127, 255, 0.05);
+}
+
+.ClassListContainer .ClassListBox .ClassList {
+    min-height: 80vh;
+    width : 800px;
 }

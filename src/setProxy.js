@@ -5,6 +5,10 @@ module.exports = function (app) {
         proxy('/api', {
             target: 'http://localhost:4000',
             changeOrigin: true
+        }),
+        proxy('/api', {
+            target: 'http://localhost:4001',
+            changeOrigin: true
         })
     );
 }

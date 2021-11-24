@@ -32,6 +32,12 @@ const Login = ({ user }) => {
         setUId(e.target.value.replaceAll(' ', ''));
     }
 
+    const handleKeyPress = (e) => {
+        if(e.key === "Enter") {
+            handleClickLogin();
+        }
+    } 
+
     return (
         <div className="LoginContainer">
             <div className="LoginBox">
@@ -39,13 +45,15 @@ const Login = ({ user }) => {
                 <div className="Login_Input">
                     <input
                         value={uid}
-                        onChange={e => handleChangeId(e)}
-                        onKeyUp={e => handleChangeId(e)}
+                        onChange={handleChangeId}
+                        onKeyUp={handleChangeId}
+                        onKeyPress={handleKeyPress}
                     />
                     <input
                         type="password"
                         value={pw}
                         onChange={e => setPW(e.target.value)}
+                        onKeyPress={handleKeyPress}
                     />
                 </div>
                 <div onClick={handleClickLogin} className="LoginBtn">
