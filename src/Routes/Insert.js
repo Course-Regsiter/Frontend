@@ -17,7 +17,7 @@ const Insert = () => {
             room
         }
 
-        await axios.post('http://localhost:4000/api/course', data)
+        await axios.post(`${process.env.REACT_APP_COURSE_SERVER_DOMAIN}/api/course`, data)
         .then(res => {
             alert("등록 완료");
             setNum();
